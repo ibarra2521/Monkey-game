@@ -14,6 +14,8 @@
 		4132E1041C6426FB006C0E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4132E1021C6426FB006C0E26 /* Main.storyboard */; };
 		4132E1061C6426FB006C0E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4132E1051C6426FB006C0E26 /* Assets.xcassets */; };
 		4132E1091C6426FB006C0E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4132E1071C6426FB006C0E26 /* LaunchScreen.storyboard */; };
+		4132E1121C643E86006C0E26 /* LOOP.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4132E1101C643E86006C0E26 /* LOOP.mp3 */; };
+		4132E1131C643E86006C0E26 /* WIN.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4132E1111C643E86006C0E26 /* WIN.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4132E1051C6426FB006C0E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4132E1081C6426FB006C0E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4132E10A1C6426FB006C0E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4132E1101C643E86006C0E26 /* LOOP.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LOOP.mp3; sourceTree = "<group>"; };
+		4132E1111C643E86006C0E26 /* WIN.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WIN.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 		4132E0EE1C6426FB006C0E26 = {
 			isa = PBXGroup;
 			children = (
+				4132E1141C643E8C006C0E26 /* Sound */,
 				4132E0F91C6426FB006C0E26 /* Monkey */,
 				4132E0F81C6426FB006C0E26 /* Products */,
 			);
@@ -68,6 +73,15 @@
 				4132E10A1C6426FB006C0E26 /* Info.plist */,
 			);
 			path = Monkey;
+			sourceTree = "<group>";
+		};
+		4132E1141C643E8C006C0E26 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				4132E1101C643E86006C0E26 /* LOOP.mp3 */,
+				4132E1111C643E86006C0E26 /* WIN.mp3 */,
+			);
+			name = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +116,7 @@
 				TargetAttributes = {
 					4132E0F61C6426FB006C0E26 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 6J78N8QV87;
 					};
 				};
 			};
@@ -130,6 +145,8 @@
 			files = (
 				4132E0FD1C6426FB006C0E26 /* GameScene.sks in Resources */,
 				4132E1091C6426FB006C0E26 /* LaunchScreen.storyboard in Resources */,
+				4132E1121C643E86006C0E26 /* LOOP.mp3 in Resources */,
+				4132E1131C643E86006C0E26 /* WIN.mp3 in Resources */,
 				4132E1061C6426FB006C0E26 /* Assets.xcassets in Resources */,
 				4132E1041C6426FB006C0E26 /* Main.storyboard in Resources */,
 			);
@@ -255,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Monkey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ibarra.nivardo.nayeli.lopez.Monkey;
@@ -266,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Monkey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ibarra.nivardo.nayeli.lopez.Monkey;
